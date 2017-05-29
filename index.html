@@ -15,11 +15,19 @@
       function initMap() {
         var uluru = {lat: 18.2130773, lng: -66.4357937};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
+          zoom: 9,
           center: uluru
         });
-        var marker = new google.maps.Marker({
-          position: uluru,
+        var marker_caboRojo = new google.maps.Marker({
+          position: {lat:18.0847666,lng:-67.164186},
+          map: map
+        });
+        var marker_maunabo = new google.maps.Marker({
+          position: {lat: 18.0056192, lng: -65.9104336},
+          map: map
+        });
+        var marker_cupey = new google.maps.Marker({
+          position: {lat: 18.3418278, lng: -66.0849212},
           map: map
         });
       }
