@@ -16,7 +16,7 @@
     <div id="googleMap"></div>
 
     <script>
-      function myMap() {
+      function initMap() {
       var ulutur = {lat: 18.241123, lng: -66.449625};
       var map = new google.maps.Map(document.getElementById('googleMap'),{
           zoom: 9,
